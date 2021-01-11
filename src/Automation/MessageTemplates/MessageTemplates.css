@@ -1,0 +1,39 @@
+.message-flow {
+    margin: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0.75rem 0.75rem;
+    background-color: var(--color-quat2);
+    color: var(--color-primary);
+    border-radius: calc(var(--def-border-radius)*0.7);
+    border: 1px solid var(--color-quat3) !important;
+    position: relative;
+}
+.message-flow .file-preview-close {
+    position: absolute;
+    right: -0.3rem;
+    top: -0.3rem;
+}
+.message-flow > * {
+    font-weight: 600;
+}
+.message-flow-search {
+    background-color: var(--color-quat2);
+    color: var(--color-primary);
+    border-radius: calc(var(--def-border-radius)*0.7);
+    border: 1px solid var(--color-quat3) !important;
+    outline: none;
+    height: 3rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+.message-flow-search .form-control {
+    border: none !important;
+    outline: none !important;
+    background-color: transparent !important;
+    height: 100%;
+}
+.message-flow-container .message-flows {
+    overflow: scroll;
+    max-height: 65vh;
+}

@@ -1,0 +1,102 @@
+/*
+  Put general, non component code here
+  Variables, font, divs, flex etc.
+*/
+:root {
+  --color-primary: rgb(75,96,116);
+  --color-primary2:rgb(24, 60, 90); /** slightly darker shade */
+  --color-secondary: #108bbb;
+  --color-secondary2: #1191c463;
+  --color-secondary3: #c2e6f7;
+  --color-tertiary: #099b8a;
+  --color-tertiary2: #09a39167;
+  --color-quat: #ecf0f1;
+  --color-quat2: rgb(250, 250, 250);
+  --color-quat3: rgb(199, 211, 218);
+  --color-hex: #768ea1;
+  --color-error: #c44646;
+  --color-note: #f3de66;
+  --def-padding: 4vmin;
+  --def-border-radius: 0.75rem;
+}
+html, body { overflow:hidden; }
+body {
+  font-family: 'Cabin' !important;
+  background: var(--color-quat);
+  
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body * {
+  font-family: 'Cabin' !important;
+}
+h1, h2, h3, h4, h5 {
+  color: var(--color-primary);
+  font-weight: 400;
+}
+.flex-def {
+	display: flex;
+	justify-content: space-between;
+  align-items: center;
+}
+
+.btn-ham {
+	background-color: transparent;
+	border: none;
+	border-radius: 0px;
+	padding: 0px;
+	height: 100%;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+.btn-ham svg {
+	padding: 0.2rem;
+	height: 100%;
+	width: 100%;
+	fill: var(--color-quat);
+}
+.btn-ham:before {
+	opacity: 0;
+}
+.profile-image {
+  border-radius: 50%;
+}
+.error-text {
+  color: var(--color-error) !important;
+}
+.spinner-border {
+  color: var(--color-secondary2);
+}
+.modal-content {
+  border-radius: var(--def-border-radius);
+  padding: 0.2rem;
+  background: var(--color-quat);
+  border: 1px solid var(--color-quat3) !important;
+}
+.secondary-panel {
+  border-radius: calc(var(--def-border-radius)*0.7);
+  background: var(--color-quat2);
+  border: 1px solid var(--color-quat3) !important;
+  max-width: 100%;
+}
+
+.strike-through::before {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 50%;
+	right: 0;
+	border-top: 3px solid;
+	transform: rotate(45deg);
+	z-index: 1;
+}
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+ 
+}

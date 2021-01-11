@@ -1,0 +1,169 @@
+.modal-body{
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2.5rem;
+}
+
+.modal-close{
+    align-self: flex-end;
+}
+
+.modal-close:hover{
+    cursor: pointer;
+    color: var(--color-tertiary);
+}
+
+.modal-title{
+    font-size: 2rem;
+    font-weight: 750;
+    color: var(--color-primary);
+    margin-bottom: 0;
+}
+
+.settings-prompt{
+	font-weight: 600;
+	font-size: 1.2rem;
+	color: var(--color-hex);
+}
+
+.settings-form{
+	background:#f0f8ff !important;
+	/*background-color: #f7fafc;*/
+	border: 0px;
+    height: 15%;
+	margin-bottom: 8%;
+}
+
+/*.modal-body{
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2.5rem;
+}
+
+.modal-close{
+    align-self: flex-end;
+}
+
+.modal-close:hover{
+    cursor: pointer;
+    color: var(--color-tertiary);
+}
+
+.modal-title{
+    font-size: 2.5rem;
+    font-weight: 750;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+}
+
+.card-holder{
+    display: flex;
+    flex-direction: row;
+}
+
+.alignment{
+    display: flex;
+	flex-direction: row;
+}
+
+.account-card.card {
+    display: flex;
+    flex-direction: column;
+	border-radius: 1.5rem;
+	box-shadow: 3px 3px 25px 2px rgba(200, 200, 200, 0.7);
+	padding: 1.75rem;
+	align-self: center;
+    border: none;
+    /*width: 24rem;
+}
+
+.settings-prompt{
+	font-weight: 600;
+	font-size: 1.2rem;
+	color: var(--color-hex);
+}
+
+.settings-form{
+	background:#f0f8ff !important;
+	/*background-color: #f7fafc;
+	border: 0px;
+    height: 15%;
+	margin-bottom: 8%;
+}
+
+.settings-check.form-check{
+
+    font-weight: 600;
+	font-size: 1rem;
+	color: var(--color-hex);
+}
+
+.account-save{
+    width: 10rem !important;
+    align-self: flex-end;
+    padding-bottom: 0.8rem;
+}
+
+.leftSide-card{
+    display: flex;
+    flex-direction: column;
+    width: 24rem;
+}
+
+.rightSide-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 2rem;
+}
+
+.reset-card{
+    display: flex;
+	flex-direction: column;
+	border-radius: 1.5rem;
+	box-shadow: 3px 3px 25px 2px rgba(200, 200, 200, 0.7);
+	align-self: center;
+    border: none;;
+    padding: 1.75rem;
+    width: 24rem;
+    margin-left: 3.9rem;
+    align-self: center;
+    height: 100%;
+}
+
+.reset-title{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+    align-self: center;
+}
+
+@media only screen and (max-width: 1200px){
+    .leftSide-card{
+        width: 14rem;
+    }
+
+    .reset-card{
+        width: 18rem;
+        margin-left: 2rem;
+    }
+}
+
+@media only screen and (max-width: 990px){
+    .card-holder{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modal-reset-box{
+        padding-top: 3rem;
+    }
+
+    .reset-card{
+        width: 100%;
+        margin-left: 0rem;
+    }
+}*/

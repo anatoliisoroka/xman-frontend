@@ -1,0 +1,104 @@
+
+.chat-row {
+    display: flex;
+    justify-content: space-between;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    
+    cursor: pointer;
+
+    padding: 0.3rem 0.5rem;
+    border-radius: calc(var(--def-border-radius)*0.8);
+    border: 1px solid var(--color-quat3);
+    background-color: var(--color-quat);
+
+    /*margin: 0.2rem 0.4rem 0.75rem 0.4rem;*/
+    margin-bottom: 0.4rem;
+    transition: 0.14s background-color;
+}
+.chat-row-selected {
+    background-color: var(--color-quat2);
+}
+.chat-row-selected .chat-row-inner b {
+    color: var(--color-primary2) !important;
+}
+.chat-row-selected .chat-row-time > * { 
+    color: var(--color-primary) !important;
+}
+.chat-row-selected .chat-row-inner font {
+    color: var(--color-primary) !important;
+}
+.chat-row-inner {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.chat-row-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-content: center;
+}
+.chat-row-inner > * {
+    margin: 0;
+    margin-right: 0.4rem;
+}
+.chat-row-inner b {
+    font-weight: 400;
+    color: var(--color-primary);
+}
+.chat-row-inner font {
+    color: var(--color-hex);
+    font-size: 0.75rem;
+}
+.chat-row-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+    align-content: right;
+    padding: 0.2rem;
+}
+.chat-row-time > * {
+    text-align: right;
+    font-size: 0.7rem;
+    color: var(--color-hex);
+}
+.chat-row-time-unread > * {
+    color: var(--color-tertiary);
+}
+.chat-available {
+    align-self: right;
+    display: inline-block;
+    margin-left: 0.2rem;
+    border-radius: 50%;
+    background-color: var(--color-tertiary);
+    color: var(--color-quat);
+    text-align: center;
+
+    width: 0.5rem;
+    height: 0.5rem;
+}
+.chat-unread {
+    align-self: right;
+    margin: 0;
+    margin-top: 0.2rem;
+    border-radius: 50%;
+    background-color: var(--color-tertiary);
+    color: var(--color-quat);
+    font-size: 0.8rem;
+    text-align: center;
+
+    width: 0.75rem;
+    height: 0.75rem;
+}
+.chat-pin {
+    position: absolute;
+    top: -0.25rem;
+    left: -0.15rem;
+    height: 1.5rem;
+}
+.chat-pin * {
+    height: 100%;
+    padding-bottom: 0.1rem;
+}

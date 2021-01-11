@@ -1,0 +1,30 @@
+
+.table-xman {
+    background-color: var(--color-quat2) !important;
+    border-radius: 0.5rem !important;
+    min-height: 50vh;
+}
+.table-xman thead > * {
+    background-color: transparent !important;
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: large;
+    border-color: var(--color-quat3) !important;
+}
+.table-xman thead * th {
+    padding: 0.5rem;
+    border-top: none !important;
+    border-bottom: none;
+    border-color: var(--color-quat3) !important;
+}
+.table-xman tbody tr {
+    border: none !important;
+    color: var(--color-primary2);
+}
+.table-xman tbody tr td {
+    border-color: var(--color-quat3) !important;
+}
+.table-xman tbody tr .number {
+    color: var(--color-secondary);
+    font-size: small;
+}

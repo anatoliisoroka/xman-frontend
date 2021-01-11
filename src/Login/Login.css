@@ -1,0 +1,88 @@
+.login-page {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: url('/bg.jpg');
+	background-size: 100% 100%;
+}
+.login-card.card {
+	display: flex;
+	flex-direction: column;
+	border-radius: var(--def-border-radius);
+	min-width: 15rem;
+	max-width: 90vw;
+	padding: 1.25rem;
+	align-self: center;
+	border: 1px solid var(--color-quat3) !important;
+	background: var(--color-quat);
+	opacity: 0.92;
+}
+.login-logo {
+	/* ENSURE Logo is not stretched */
+	width: 30%;
+	padding-bottom: 0.8rem;
+	margin: 5% auto 5% auto;
+}
+.login-title{
+	font-weight: 700;
+	font-size: 30px;
+	color: var(--color-primary); /* variables defined in ./Components/index.css */
+	margin-bottom: 8%;
+	align-self: center;
+}
+.login-prompt{
+	font-weight: 700;
+	font-size: 18px;
+	color: var(--color-primary);
+	margin-bottom: 4%;
+}
+.login-form{
+	background: var(--color-quat2) !important;
+	border: 1px solid var(--color-quat3);
+	border-radius: calc(var(--def-border-radius)*0.5);
+	margin-bottom: 4%;
+}
+.login-form-pannel {
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+}
+
+.login-validation{
+	display: flex;
+	background-color: rgb(250, 223, 223);
+	border-radius: 0.3rem;
+	align-self: center;
+	margin-bottom: 5%;
+	/* width: 100%; */
+}
+
+.login-validation-text{
+	color: red;
+	margin-left: 45px;
+	margin-right: 45px;
+	white-space: nowrap;
+}
+
+.form-feedback{
+	width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: var(--color-error);
+}
+
+.login-forget-password {
+	color: var(--color-tertiary);
+	font-size: 15px;
+	/*margin: 0px auto;*/
+	padding-top: 1rem;
+	font-family: "Cabin";
+	font-weight:700;
+	cursor: pointer;
+	align-self: center;
+}

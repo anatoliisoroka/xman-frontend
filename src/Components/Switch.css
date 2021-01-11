@@ -1,0 +1,55 @@
+:root {
+    --width-switch: 2.5rem;
+}
+.switch-parent {
+    display: flex;
+    align-content: center;
+    justify-content: left;
+    padding: 0.2rem;
+}
+
+.react-switch-checkbox {
+    width: 3rem;
+    display: none;
+    visibility: hidden;
+}
+
+.react-switch-checkbox + label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    width: var(--width-switch);
+    height: calc(var(--width-switch)/4);
+    background: grey;
+    border-radius: 100px;
+    position: relative;
+    transition: background-color .2s;
+    padding: 0;
+    margin: 0;
+}
+
+.react-switch-checkbox:checked + label {
+    background: var(--color-primary2);
+}
+
+
+.react-switch-checkbox + label > span {
+    content: '';
+    position: absolute;
+    width: calc(var(--width-switch)*0.5);
+    height: calc(var(--width-switch)*0.5);
+    border-radius: calc(var(--width-switch)*0.5);
+    transition: 0.2s;
+    background: var(--color-tertiary);
+    box-shadow: 0 0 4px 0 rgba(10, 10, 10, 0.29);
+}
+
+.react-switch-checkbox:checked + label > span {
+    left: 100%;
+    transform: translateX(-100%);
+}
+
+.react-switch-checkbox + label:active > span {
+    width: calc(var(--width-switch)*0.6);
+}

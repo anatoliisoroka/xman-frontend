@@ -1,0 +1,119 @@
+:root {
+	--def-menu-height: min(9vmin, 4.5rem);
+	--max-content-height: calc(100vh - var(--def-menu-height))
+}
+.main-menu-header {
+	display: flex;
+	min-height: var(--def-menu-height);
+	right: 0;
+	left: 0;
+	padding: 0;
+	margin: 0;
+
+	background: var(--color-tertiary);
+	background: linear-gradient(175deg, var(--color-tertiary) 10%, var(--color-secondary) 100%);
+}
+.main-menu {
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.main-menu-content {
+	height: var(--max-content-height);
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.main-menu-content > .col {
+	padding: 0;
+	margin: 0;
+}
+.main-menu-content > .col > .tab-content > .tab-pane {
+	margin: 0;
+	padding: var(--def-padding);
+}
+.logo {
+	display: flex;
+	justify-content: center;
+	min-width: 4rem;
+	max-width: 5vw;
+	max-height: 100%;
+	padding: 0;
+	margin-left: 1vw;
+	margin-right: 0vw;
+}
+.logo * {
+	width: 100%;
+	object-fit: contain;
+}
+
+/** nav variant for header */
+.nav-main-menu {
+	margin: 0;
+	padding: 0;
+}
+.nav-main-menu .nav-item .nav-link {
+	color: var(--color-quat);
+	font-size: min(1.3rem, 3vw);
+	font-weight: 600;
+	transition: 0.2s transform;
+	border: none;
+	padding: 0;
+	margin: 0;
+	padding-right: 1.5vw;
+	padding-left: 0vw;
+}
+.nav-main-menu .nav-item .nav-link img {
+	height: calc(var(--def-menu-height)*0.8);
+	margin-right: 0.2rem;
+}
+.nav-main-menu .nav-item .nav-link.active {
+	color: var(--color-quat);
+	text-shadow: 0px 0px 5px var(--color-quat3);
+	border: none;
+	transform: scale(1.05);
+}
+.nav-main-menu .nav-item .nav-link:hover {
+	transform: scale(1.05);
+}
+.nav-main-menu .nav-item .nav-link:focus {
+	outline: none;
+}
+
+.custom-dropdown-button-item > button {
+	background-color: transparent;
+	color: var(--text-color);
+	font-weight: 400;
+	border: none;
+	width: 100%;
+	text-align: left;
+	transition: 0.25s transform;
+}
+
+.custom-dropdown-button-item > .btn.focus,
+.custom-dropdown-button-item > .btn:focus
+{
+	outline: none;
+	box-shadow: none;
+}
+
+.custom-dropdown-button-item > .btn:hover
+{
+	color: var(--text-color);
+	text-decoration: none;
+	transform: scale(1.075);
+}
+
+.custom-dropdown-button-item .dropdown-toggle::before {
+	display: inline-block;
+	margin-right: .255em;
+	vertical-align: none;
+	content: "";
+	border-top: none;
+	border-right: none;
+	border-bottom: none;
+}

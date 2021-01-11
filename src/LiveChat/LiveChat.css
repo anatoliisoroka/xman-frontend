@@ -1,0 +1,147 @@
+.live-chat-header > * {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+.live-chat-overlay {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.live-chat-overlay > * {
+    animation: fadein 0.2s;
+}
+@keyframes fadein {
+    from { opacity: 0}
+    to   { opacity: 1}
+}
+
+.live-chat-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: stretch;
+    align-self: stretch;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-top: var(--def-padding);
+}
+.live-chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 3.5rem;
+    user-select: none;
+    background-color: var(--color-quat2);
+    border-bottom: 1px solid var(--color-quat3);
+    margin-top: calc(var(--def-padding)*(-1));
+    width: calc(100%);
+    padding: 0.35rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.live-chat-header * {
+    color: var(--color-primary);
+}
+.live-chat-main-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    overflow-y: scroll
+}
+.live-chat-main-panel > div {
+    background-color: var(--color-quat2);
+    padding: 0.3vmin;
+    margin: 1.25vmin;
+    border-radius: var(--def-border-radius);
+    border: 1px solid var(--color-quat3);
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    align-self: stretch;
+    
+    min-height: calc(var(--max-content-height) - 15rem);
+    max-height: calc(var(--max-content-height) - 5rem);
+
+    flex-shrink: 10;
+}
+.live-chat-main-panel > :nth-child(2) {
+    margin-right: 0;
+    margin-left: 0;
+}
+.live-chat-main-panel > :first-child {
+    min-width: 0;
+}
+.live-chat-main-panel > div > * {
+    margin: 0.5vmin;
+}
+
+.spinner-live-chat {
+    width: 8rem !important;
+    height: 8rem !important;
+    border-width: 1rem;
+}
+.live-chat-qr-page {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.live-chat-qr-page > * {
+    margin: 2rem;
+    min-width: 20rem;
+}
+.live-chat-instructions > span {
+    align-self: left;
+    font-size: 1.5rem;
+    color: var(--color-hex)
+}
+.profile-picture-preview .modal-content {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none;
+    position: relative !important;
+}
+.profile-picture-preview * {
+    max-width: max-content;
+    max-height: max-content;
+}
+.profile-picture-preview img {
+    height: auto;
+    width: auto;
+    object-fit: cover;
+    
+    border-radius: 1rem;
+    border: 5px solid var(--color-quat);
+    box-shadow: 3px 3px 25px 2px rgba(200, 200, 200, 0.7);
+}
+.profile-picture-preview .modal-content .download {
+    position: absolute;
+    left: 1rem;
+    top: -5rem;
+    opacity: 0;
+    transition: 0.2s opacity;
+}
+.profile-picture-preview .modal-content .download svg {
+    stroke: var(--color-quat3);
+    height: 3rem;
+    width: 3rem;
+}
+
+
+.profile-picture-preview .modal-content:hover .download {
+    opacity: 1;
+}

@@ -1,0 +1,51 @@
+.chat-profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    flex-shrink: 0;
+}
+.chat-profile-display {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.chat-profile-display > * {
+    position: relative;
+    padding-right: 0.8rem;
+    line-height: 0rem;
+}
+.chat-profile-display > .profile-container {
+    height: 2.8rem;
+}
+.chat-profile-display font {
+    color: var(--color-hex);
+}
+.messages-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+}
+.message-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    flex-grow: 1;
+    overflow: hidden;
+}
+.message-list > div {
+    overflow: scroll;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.refreshing-spinner {
+    animation: rotate 1s infinite;
+}
+
+
+@keyframes rotate {
+    100% {transform: rotate(360deg);}
+}

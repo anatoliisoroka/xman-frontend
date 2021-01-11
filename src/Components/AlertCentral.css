@@ -1,0 +1,36 @@
+.alert-dismissible .close {
+    padding: 0;
+	z-index: 1;
+	opacity: 1;
+}
+.alert-dismissible .close > * {
+	background: none;
+	font-size: xx-large;
+	padding: 10px;
+}
+.alert-central {
+	position: fixed;
+	z-index: 10000;
+	background-color: var(--color-primary);
+	color: var(--color-quat);
+	font-size: larger;
+	font-weight: 550;
+	top: 1.5rem;
+	left: 1.5rem;
+	right: 1.5rem;
+	box-shadow: 0px 6px 25px 0px rgba(0,0,0, 0.7);
+	transition: 0.25s transform;
+}
+.alert-central.error {
+	background-color: var(--color-error);
+
+}
+.alert-central.showing {
+	transform: translateY(0%);
+}
+.alert-central.hide {
+	transform: translateY(-300%);
+}
+.alert-central * {
+	font-size: large;
+}

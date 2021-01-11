@@ -1,0 +1,27 @@
+.menu-item {
+    padding: 0.5rem 0.5rem;
+}
+
+.menu-item:focus{
+    background-color:var(--color-quat) 
+}
+
+
+.option-name {
+    color: var(--color-secondary);
+    font-size: 1.05rem;
+    line-height: 1.4rem;
+}
+
+.option-preview{
+    color:  var(--color-hex);
+    font-size: small;
+}
+
+.button-container {
+    height: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 0.5rem;
+}

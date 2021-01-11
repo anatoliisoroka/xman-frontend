@@ -1,0 +1,65 @@
+{
+  "name": "xman-components",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@adiwajshing/keyed-db": "^0.1.8",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "audio-recorder-polyfill": "^0.3.8",
+    "awesome-debounce-promise": "^2.1.0",
+    "bootstrap": "^4.5.3",
+    "copy-to-clipboard": "^3.3.1",
+    "csv-string": "^4.0.1",
+    "dotenv": "^8.2.0",
+    "emoji-mart": "^3.0.0",
+    "firebase": "^8.0.2",
+    "formik": "^2.2.1",
+    "mousetrap": "^1.6.5",
+    "qrcode.react": "^1.0.0",
+    "react": "^16.14.0",
+    "react-aspect-ratio": "1.0.44",
+    "react-bootstrap": "^1.3.0",
+    "react-csv": "^2.0.3",
+    "react-datepicker": "^3.2.2",
+    "react-dom": "^16.14.0",
+    "react-dropzone": "^11.2.4",
+    "react-infinite-scroll-component": "^5.1.0",
+    "react-modal": "^3.11.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
+    "react-select": "^3.1.0",
+    "react-spinners": "^0.9.0",
+    "react-time-ago": "^6.1.1",
+    "use-constant": "^1.0.0",
+    "vcard-parser": "^1.0.0",
+    "webp-hero": "^0.0.0-dev.26",
+    "yup": "^0.29.3"
+  },
+  "devDependencies": {
+    "s3-folder-upload": "^2.3.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "node deploy.js",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

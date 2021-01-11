@@ -1,0 +1,29 @@
+.custom-checkbox {
+    border: 2px solid var(--color-hex);
+    border-radius: calc(var(--def-border-radius)*0.5);
+    padding: 0;
+    width: 1.4rem;
+    height: 1.4rem;
+    position: relative;
+    display: inline-block;
+}
+.custom-checkbox:hover {
+    cursor: pointer;
+}
+.checked-checkbox {
+    transition: 0.15s opacity;
+}
+.checked-checkbox::after {
+    pointer-events: none;
+    position: absolute;
+    content: ' ';
+    display: inline-block;
+    transform: rotate(45deg);
+    height: 1.5rem;
+    left: 0.5rem;
+    top: -0.5rem;
+    width: 0.6rem;
+    border-bottom: 0.3rem solid var(--color-tertiary);
+    border-right: 0.3rem solid var(--color-tertiary);
+    
+}

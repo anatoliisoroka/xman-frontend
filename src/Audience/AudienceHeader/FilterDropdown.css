@@ -1,0 +1,132 @@
+.filter-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    width: 25rem;
+}
+
+.filter-container .filter-title {
+    font-size: 1.8rem;
+    font-weight: 750;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.filter-container .filter-search{
+    padding: 0.35rem 0.35rem !important;
+    background-color: var(--color-quat2);
+    color: var(--color-primary);
+    height:3rem;
+    margin-bottom: 1.5rem;
+    border-radius: var(--def-border-radius) !important;
+    border: 1px solid var(--color-quat3) !important;
+}
+
+.filter-container .filter-prompt{
+	font-weight: 600;
+	font-size: 1.1rem;
+    color: var(--color-hex);
+}
+
+.filter-container .filter-tags{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+    align-items: center;
+    justify-content: space-between ;
+}
+
+.filter-container .message-container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+    align-items: center;
+    justify-content: space-between ;
+}
+
+.filter-container .message-prompt{
+	font-weight: 600;
+	font-size: 0.9rem;
+    color: var(--color-hex);
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.filter-container .message-container .form-control{
+    width:7.5rem;
+    height:3rem;
+}
+.filter-container .btn-tag-picker{
+    width:15rem;
+    height:3rem;
+}
+
+.filter-container .message-container .message-input {
+    padding: 0.35rem 0.35rem !important;
+    background-color: var(--color-quat2);
+    color: var(--color-primary);
+    margin: 0;
+    border-radius: var(--def-border-radius) !important;
+    border: 1px solid var(--color-quat3) !important;
+}
+
+.filter-container hr {
+    width: 100%;
+    margin-bottom: 0.9rem;
+}
+
+.message-history-content{
+    padding: 0rem 0.6rem 0rem 0.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20rem;
+}
+
+.message-history-content .message-title {
+    font-size: 1.3rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.message-history-content .message-search{
+    background: var(--color-quat2);
+	/*background-color: #f7fafc;*/
+	border: 1px solid var(--color-quat3);
+    /* height: 15%; */
+	margin-bottom: 1.5rem;
+}
+
+.message-history-content .message-include{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.message-history-content .message-include .message-include-select{
+    /*background-color: #f7fafc;*/
+    background: var(--color-quat2); 
+	border: 1px solid var(--color-quat3);
+    /* height: 15%; */
+}
+
+.message-history-content .message-prompt{
+	font-size: 1rem;
+    color: var(--color-hex);
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.message-history-content .message-select{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+    align-items: center;
+    justify-content: space-evenly;
+}

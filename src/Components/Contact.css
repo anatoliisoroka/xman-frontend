@@ -1,0 +1,40 @@
+.radius {
+    background-color: white;
+    border-collapse: collapse;
+    border: none;
+    border-radius: 15px;
+}
+
+.shadow {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    border: none
+}
+
+.table-bordered th {
+    border: none;
+}
+
+.table-bordered td {
+    border: none;
+    border-bottom: 1px solid #F5F5F5 !important;
+}
+
+.react-bootstrap-table table {
+    table-layout: auto !important;
+    color: #374E65;
+}
+
+.table th, .table td {
+    white-space: nowrap
+}
+
+
+span {
+    background-color: #90a8be;
+    color: #f7fafc;
+    padding: 3px 8px;
+    margin-left: 7px;
+    font-size: 14px;
+    border-radius: 10px;
+}

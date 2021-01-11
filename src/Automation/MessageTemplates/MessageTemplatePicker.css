@@ -1,0 +1,91 @@
+.btn-flow-picker {
+    background-color: var(--color-quat2);
+    color: var(--color-primary2);
+    border-radius: var(--def-border-radius);
+    display: flex;
+    flex-shrink: 2;
+    flex-wrap: wrap;
+    min-height: 3rem;
+    text-align: left;
+    position: relative;
+    border: 1px solid #E1EDF4;
+    margin: 0;
+    min-width: 10rem;
+    width:100%;
+    align-items: center;
+}
+.btn-flow-picker::after {
+    position: absolute;
+    top: 47%;
+    right: 0.5rem;
+}
+.flow-picker .btn {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.btn-flow-picker.dropdown-toggle {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.flow-picker {
+    overflow: hidden;
+    padding:0
+}
+.flow-picker > .flex-def .btn svg {
+    margin-top: 0.1rem;
+    fill: var(--color-primary) !important;
+}
+.flow-picker > .flex-def {
+    height: 3rem;
+    background-color: var(--color-quat);
+    overflow: scroll;
+    max-height: max(40vh, 20rem);
+}
+
+.flow-picker .form-control {
+    margin-top:1rem;
+
+    background-color: transparent;
+    border-radius: 0;
+    border: none !important;
+    color: var(--color-primary);
+    min-width: 10rem;
+}
+.flow-picker .form-control::placeholder {
+    color: var(--color-primary);
+    filter: brightness(0.9);
+}
+.flow-picker .form-control:focus {
+    box-shadow: none !important;
+}
+.flow-picker .item {
+    border-radius: 0;
+    padding: 0.6rem;
+}
+.flow-picker .item svg {
+    fill: var(--color-primary);
+}
+
+.flow-picker .item:hover {
+    background-color: var(--color-quat);
+}
+
+.flow-picker .dropdown-item {
+    color: var(--color-primary);
+    margin: 0;
+    padding: 0;
+}
+.flow-picker .dropdown-item:hover {
+    background: none;
+}
+.flow-picker .selected {
+    color: var(--color-tertiary);
+}
+.flow-picker-content {
+    max-height: 15rem;
+    overflow: scroll;
+}

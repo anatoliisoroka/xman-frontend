@@ -1,0 +1,103 @@
+.modal-body{
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2.5rem;
+}
+
+.modal-close{
+    align-self: flex-end;
+}
+
+.modal-close:hover{
+    cursor: pointer;
+    color: var(--color-tertiary);
+}
+
+.custom-modal-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 0;
+}
+
+.invite-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.invite-data-container {
+    margin: auto;
+}
+
+.invite-no-data-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.invite-p-question {
+    height: 100%;
+    font-weight: 800;
+    font-size: 1.15rem;
+    color: var(--color-primary);
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+
+.invite-content-container {
+    width: 100%;
+    padding: 4%;
+}
+
+p {
+    color: var(--color-primary);
+    font-size: 1.2rem;
+}
+
+.invite-confirm-button {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    background-color: var(--color-primary);
+}
+
+.invite-cancel-button {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    background-color: var(--color-error);
+}
+
+.invite-cancel-button:hover {
+    background-color: var(--color-error);
+}
+
+.invite-cancel-button:focus {
+    background-color: var(--color-error);
+}
+
+.invite-cancel-button.focus {
+    background-color: var(--color-error);
+}
+
+.invite-cancel-button:active {
+    background-color: var(--color-error);
+}
+
+.invite-cancel-button:visited {
+    background-color: var(--color-error);
+}
+
+.invite-cancel-button:focus-visible {
+    background-color: var(--color-error);
+}

@@ -1,0 +1,31 @@
+.message-flow-create-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    padding: 0rem 0.65rem;
+}
+.message-flow-create-container > * {
+    margin-top: 0.65rem;
+    margin-bottom: 0.65rem;
+    width: 100%;
+}
+.message-flow-buttons {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.message-flow-preview {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    min-height: 10rem;
+    padding: 0.5rem;
+}
+.message-flow-name-input {
+    padding: 0.5rem;
+    height: 2.6rem;
+    border: none !important;
+    background-color: transparent !important;
+}
+.message-flow-name-input::placeholder {
+    font-style: italic;
+}

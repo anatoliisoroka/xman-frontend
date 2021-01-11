@@ -1,0 +1,26 @@
+.loading-modal-container {
+    margin: 4%;
+    display: block;
+}
+
+.loading-spinner-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: auto;
+}
+
+.loading-content-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: auto;
+    font-weight: 900;
+    font-size: 1.25rem;
+    color: var(--color-primary);
+}
+
+.loading-spinner-border {
+    margin: 0 auto;
+    display: block;
+}

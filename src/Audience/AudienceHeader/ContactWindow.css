@@ -1,0 +1,121 @@
+.contact-body{
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-close{
+    align-self: flex-end;
+}
+
+.modal-close:hover{
+    cursor: pointer;
+    color: var(--color-tertiary);
+}
+
+.modal-title{
+    font-size: 2.5rem;
+    font-weight: 750;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+}
+
+.card-holder{
+    display: flex;
+    flex-direction: row;
+}
+
+.alignment{
+    display: flex;
+    flex-direction: row;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+}
+
+
+.account-card.card {
+    display: flex;
+    flex-direction: column;
+	border-radius: 1.5rem;
+	box-shadow: 3px 3px 25px 2px rgba(200, 200, 200, 0.7);
+	padding: 1.75rem;
+	align-self: center;
+    border: none;
+    /*width: 24rem;*/
+}
+
+.contact-tag{
+    margin-bottom: 1.5rem;
+}
+
+.settings-prompt{
+	font-weight: 600;
+	font-size: 1.2rem;
+	color: var(--color-hex);
+}
+
+.settings-form{
+	background:#f0f8ff !important;
+	/*background-color: #f7fafc;*/
+	border: 0px;
+    height: 15%;
+	margin-bottom: 4%;
+}
+
+.settings-check.form-check{
+
+    font-weight: 600;
+	font-size: 1rem;
+	color: var(--color-hex);
+}
+
+.account-save{
+    width: 10rem !important;
+    align-self: flex-end;
+    padding-bottom: 0.8rem;
+}
+
+.leftSide-card{
+    display: flex;
+    flex-direction: column;
+    width: 24rem;
+}
+
+.rightSide-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 2rem;
+}
+
+.modal-reset-box{
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.contact-button{
+    margin-top: 1.5rem;
+}
+
+/*.reset-card{
+    display: flex;
+	flex-direction: column;
+	border-radius: 1.5rem;
+	box-shadow: 3px 3px 25px 2px rgba(200, 200, 200, 0.7);
+	align-self: center;
+    border: none;;
+    padding: 1.75rem;
+    width: 90%;
+    margin-left: 1.5rem;
+    align-self: center;
+    height: 100%;
+}*/
+
+.reset-title{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+    align-self: center;
+}

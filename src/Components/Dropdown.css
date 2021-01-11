@@ -1,0 +1,22 @@
+.dropdown-menu {
+    border: 1px solid var(--color-quat3);
+    background-color: var(--color-quat2);
+    transition: 0.2s opacity;
+    border-radius: calc(var(--def-border-radius));
+}
+.dropdown-menu > .dropdown-item {
+	background-color: transparent;
+	padding: 0.5em 1em;
+	margin: 0;
+	color: var(--color-primary2);
+	transition: 0.25s transform;
+}
+.dropdown-menu > .dropdown-divider {
+    border-color: var(--color-primary);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.dropdown-menu > .dropdown-item:hover {
+	background-color: initial;
+	transform: scale(1.05);
+}

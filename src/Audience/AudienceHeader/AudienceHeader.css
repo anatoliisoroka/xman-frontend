@@ -1,0 +1,43 @@
+.audience-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-quat2);
+    border-bottom: 1px solid var(--color-quat3);
+    padding: 0.75rem;
+    margin: calc(var(--def-padding)*(-1));
+    margin-bottom: var(--def-padding);
+}
+.audience-header .btn-transparent::after { 
+    opacity: 0; /* hide the bottom pointing arrow */
+}
+.import-modal .modal-header {
+    color: var(--color-primary);
+    font-size: x-large;
+}
+.import-modal .modal-body {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.import-modal .modal-body > * {
+    margin-top: 1rem;
+}
+.import-modal .selected-file {
+    font-size: small;
+    color: var(--color-secondary3);
+}
+.filter-dropdown {
+    margin: 0.75rem;
+    min-width: 20rem;
+    display: flex;
+    flex-direction: column;
+}
+.filter-dropdown > :first-child {
+    margin-top: 0 !important;
+}
+.filter-dropdown > * {
+    margin-top: 0.75rem;
+}

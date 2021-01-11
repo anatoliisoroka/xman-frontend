@@ -1,0 +1,254 @@
+.btn-green {
+    background-color: #00a396;
+    color: white;
+    border-radius: 15px;
+    height: 48px;
+}
+
+.btn-white {
+    background-color: white;
+    color: black;
+    height: 48px;
+    box-shadow: -4px 4px 4px 3px rgba(0,0,0,0.03);
+    border-radius: 0 0 20px 20px;
+}
+
+.input-group>.form-control {
+    height: 48px;
+    width: 414px;
+    border-radius: 15px;
+}
+
+.btn-green.dropdown-toggle {
+    white-space: nowrap;
+    background-color:  #00a396;
+    width: 11rem;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.btn-green.dropdown-toggle:hover { 
+    background-color:  #00a396 !important;
+    color: white !important;
+}
+
+.btn-green.dropdown-toggle:active, .btn-green.dropdown-toggle:focus { 
+    background-color:  #00a396 !important;
+    border-radius: 15px 0 0 15px;
+}
+
+.btn-green.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-radius: 15px 0 0 15px;
+}
+
+.show>.btn-green.dropdown-toggle {
+    background-color:  #00a396;
+    border-radius: inherit;
+    border-radius: 15px 0 0 0;
+}
+
+.dropdown-toggle:empty::after {
+    margin-left: 0;
+}
+
+  
+.dropdown-item {
+    display: block;
+    width: 11rem;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: black;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: white;
+    border: 0;
+}
+  
+.dropdown-item:hover, .dropdown-item:focus {
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: white !important;
+}
+
+  
+.btn-green.dropdown-item.active, .btn-green.dropdown-item:active{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    background-color: #00a396;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.input-group>.form-control {
+    display: block;
+    width: 414px;
+    height: 48px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #00a396;
+    background-clip: padding-box;
+    border: none;
+}
+
+.input-group>.form-control:focus {
+    color: #495057;
+    background-color: #00a396;
+    border-color: none !important;
+    border: none;
+    outline: 1;
+}
+
+.input-group>.white-msg.form-control:focus {
+    color: black;
+    background-color: white;
+    border-color: none !important;
+    border: none;
+    outline: 1;
+}
+
+label {
+    display: inline;
+    padding: 15px;
+    min-width: 200px;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    text-align: left;
+}
+
+.btn-white.dropdown-toggle {
+    white-space: nowrap;
+    background-color:  white;
+    width: 11rem;
+    border-radius: 0 0 0 15px;
+    text-align: left;
+}
+
+.btn-white.dropdown-toggle:hover { 
+    background-color:  white !important;
+    color: black !important;
+}
+
+.btn-white.dropdown-toggle:active, .btn-white.dropdown-toggle:focus { 
+    background-color:  white !important;
+    border-radius: 0 0 0 15px;
+}
+
+.btn-white.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-radius: 0 0 0 15px;
+}
+
+.show>.btn-white.dropdown-toggle {
+    background-color: white;
+    border-radius: inherit;
+}
+  
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: black !important;
+    text-align: left;
+    list-style: none;
+    background-color: white !important;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    height: 20rem;
+    overflow-y: auto;
+}
+  
+.btn-white.dropdown-item {
+    display: block;
+    width: 11rem;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: black;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: white;
+    border: 0;
+}
+  
+.dropdown-item:hover, .dropdown-item:focus {
+    color:black;
+    font-weight: 700;
+    text-decoration: none;
+    background-color:white !important;
+}
+
+  
+.btn-white.dropdown-item.active, .btn-white.dropdown-item:active{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    background-color: blackg;
+}
+
+
+.white-msg.form-control, .tag.form-control {
+    display: inline;
+    width: 414px;
+    height: 48px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+    background-color: white;
+    background-clip: padding-box;
+    box-shadow: 4px 4px 4px 3px rgba(0,0,0,0.03);
+    border-radius: 0 0 20px 20px;
+}
+
+.tag.form-control {
+    padding: 6px 320px 6px 12px !important;
+}
+
+.tag.form-control:focus, .tag.form-control:focus {
+    color: black;
+    background-color: white;
+    border-color: none !important;
+    border: none;
+    outline: 1;
+}
+
+.tag::placeholder {
+    background-color: #90a8be;
+    color: white;
+    padding: 3px 8px;
+    font-size: 15px;
+    border-radius: 10px;
+    line-height: 1em;
+
+}

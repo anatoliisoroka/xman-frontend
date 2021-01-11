@@ -1,0 +1,110 @@
+.tag-picker-scroll {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    max-height: max(40vh, 20rem);
+}
+.tag-picker-scroll .dropdown-item {
+    padding: 0.6rem 0.7rem;
+    color: var(--color-primary);
+    border-radius: 0;
+    transition: 0.15s background-color;
+    position: relative;
+}
+.tag-picker-scroll .dropdown-item .file-preview-close {
+    position: absolute;
+    right: 0.5rem;
+    display: none;
+}
+.tag-picker-scroll .dropdown-item:hover .file-preview-close {
+    display: inline-block;
+}
+.tag-picker-scroll .selected-tag:hover::after {
+    display: none;
+}
+.tag-picker-scroll .dropdown-item:hover {
+    background-color: var(--color-quat);
+    color: var(--color-primary);
+}
+.tag-picker-scroll .selected-tag::after {
+    position: absolute;
+    content: ' ';
+    display: inline-block;
+    transform: rotate(45deg);
+    height: 1.2rem;
+    width: 0.6rem;
+    right: 0.8rem;
+    border-bottom: 0.3rem solid var(--color-tertiary);
+    border-right: 0.3rem solid var(--color-tertiary);
+}
+.btn-tag-picker {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 2;
+    padding: 0.35rem 0.35rem !important;
+    background-color: var(--color-quat2);
+    color: var(--color-primary);
+    margin: 0;
+    min-width: 10rem;
+    width: 100%;
+    min-height: 3rem;
+    position: relative;
+    align-items: center;
+    border-radius: var(--def-border-radius) !important;
+    border: 1px solid var(--color-quat3) !important;
+    max-width: max(20rem, 25vw);
+}
+.btn-tag-picker::after {
+    position: absolute;
+    top: 50%;
+    right: 0.3rem;
+}
+.btn-create-tag {
+    padding: 0.6rem 0.75rem;
+    color: var(--color-primary);
+    border-radius: 0;
+}
+.btn-create-tag:hover {
+    background-color: var(--color-primary);
+    color: var(--color-quat);
+}
+.alert-tag {
+    display: inline-block;
+    margin: 0.15rem;
+    padding: 0.3rem 1rem;
+    background-color: var(--color-secondary2);
+    color: var(--color-primary);
+    border-radius: calc(var(--def-border-radius)*0.75) !important;
+}
+.alert-tag .close {
+    margin: 0;
+    padding: 0;
+    top: -0.5rem;
+    right: -0.5rem;
+    transform: scale(0.7);
+}
+.alert-tag .close:hover {
+    color: var(--color-quat);
+}
+.tag-picker {
+    overflow: hidden;
+}
+.tag-picker .form-control {
+    background-color: var(--color-quat);
+    color: var(--color-primary);
+    border-radius: 0;
+    border: none !important;
+    min-width: 12rem;
+    height: 3rem;
+    margin-top: -0.5rem;
+}
+.tag-picker .form-control::placeholder {
+    color: var(--color-primary2);
+    filter: brightness(0.9);
+}
+.tag-picker .form-control:focus {
+    box-shadow: none !important;
+}
+.dynamic-tag {
+    color: var(--color-tertiary) !important;
+}
